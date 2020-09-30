@@ -24,7 +24,7 @@ const galleryGenerator = (images) => {
   const imagesElem = document.createElement("img");
   imagesElem.src = images.url;
   imagesElem.alt = images.alt;
-  imagesElem.classList ="gallery-img"
+  imagesElem.classList = "gallery-img";
   imagesList.appendChild(imagesElem);
   return imagesList;
 };

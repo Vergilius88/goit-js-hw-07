@@ -19,4 +19,4 @@ const ingredientsListAcc = ingredients.map((ingredients) =>
   ingredientsListGenerator(ingredients)
 );
 
-ingredientsRef.append (...ingredientsListAcc)
+ingredientsRef.append(...ingredientsListAcc);

@@ -1,4 +1,5 @@
 "use strict";
+
 const sliderRef = document.querySelector("#font-size-control");
 const mutableTextRef = document.querySelector("#text");
 
