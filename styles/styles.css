@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+img {
+  display: block;
+}
+html {
+  font-size: 10px;
+}
+.title{
+  color: rebeccapurple;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+}
+.gallery-img{
+  width: 100%;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
