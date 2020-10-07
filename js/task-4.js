@@ -11,5 +11,5 @@ const increment = () =>
 const decrement = () =>
   (counterValue.textContent = Number.parseInt(counterValue.textContent) - 1);
 
-additionBtn.addEventListener("click", () => increment(counterValue));
-subtractionBtn.addEventListener("click", () => decrement(counterValue));
+additionBtn.addEventListener("click", increment);
+subtractionBtn.addEventListener("click", decrement);

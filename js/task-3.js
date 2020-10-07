@@ -19,15 +19,15 @@ const images = [
 ];
 const galleryRef = document.querySelector("#gallery");
 
-const galleryGenerator = (images) => {
-  const imagesList = document.createElement("li");
+const createImageElement = (images) => {
+  const imagesListItem = document.createElement("li");
   const imagesElem = document.createElement("img");
   imagesElem.src = images.url;
   imagesElem.alt = images.alt;
   imagesElem.classList = "gallery-img";
-  imagesList.appendChild(imagesElem);
-  return imagesList;
+  imagesListItem.appendChild(imagesElem);
+  return imagesListItem;
 };
-const galleryAcc = images.map((images) => galleryGenerator(images));
+const galleryAccumulator = images.map((images) => createImageElement(images));
 
-galleryRef.append(...galleryAcc);
+galleryRef.append(...galleryAccumulator);

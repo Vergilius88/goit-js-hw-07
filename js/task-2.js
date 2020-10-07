@@ -11,9 +11,9 @@ const ingredients = [
 
 const ingredientsRef = document.querySelector("#ingredients");
 const ingredientsListGenerator = (ingredients) => {
-  const conteinerIngredients = document.createElement("li");
-  conteinerIngredients.textContent = ingredients;
-  return conteinerIngredients;
+  const containerIngredients = document.createElement("li");
+  containerIngredients.textContent = ingredients;
+  return containerIngredients;
 };
 const ingredientsListAcc = ingredients.map((ingredients) =>
   ingredientsListGenerator(ingredients)
